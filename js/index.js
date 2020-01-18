@@ -5,8 +5,8 @@ function watchForm() {
         $('#list').append(`
             <li class="shoppingItem">
                 <p>${item}</p>
-                <button class="checkButton">Check</button>
-                <button class="deleteButton">Delete</button>
+                <button class="checkButton btn btn-success">Check</button>
+                <button class="deleteButton btn btn-danger">Delete</button>
             </li>
         `);
         $('#item').val("");
