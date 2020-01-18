@@ -2,6 +2,10 @@ function watchForm() {
     $('#form').on('submit', (event) => {
         event.preventDefault();
         let item = $('#item').val();
+        if (item === "") {
+            console.log("Empty item");
+            return;
+        }
         $('#list').append(`
             <li class="shoppingItem">
                 <p>${item}</p>
