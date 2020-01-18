@@ -3,11 +3,11 @@ function watchForm() {
         event.preventDefault();
         let item = $('#item').val();
         $('#list').append(`
-            <div class="shoppingItem">
+            <li class="shoppingItem">
                 <p>${item}</p>
                 <button class="checkButton">Check</button>
                 <button class="deleteButton">Delete</button>
-            </div>
+            </li>
         `);
         $('#item').val("");
     });
